@@ -1,7 +1,7 @@
 
 # User Guide for NestJS Middleware Project
 
-This document provides step-by-step instructions on how to use the NestJS middleware project, including building, running, and testing the application.
+This document provides step-by-step instructions on how to use the NestJS middleware project.
 
 ## Overview
 

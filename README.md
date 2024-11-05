@@ -1,4 +1,3 @@
-
 # User Guide for NestJS Middleware Project
 
 This document provides step-by-step instructions on how to use the NestJS middleware project.
@@ -6,6 +5,25 @@ This document provides step-by-step instructions on how to use the NestJS middle
 ## Overview
 
 The NestJS middleware project demonstrates the use of middleware in a NestJS application to log HTTP requests and responses.
+
+## Middleware Explanation
+
+The project includes a `LoggerMiddleware` that tracks and logs HTTP request/response information. Here's what it does:
+
+1. For each incoming request, the middleware:
+   - Captures the timestamp when the request starts
+   - Waits for the response to finish
+   - Logs the following information:
+     - Timestamp in ISO format
+     - HTTP method (GET, POST, etc.)
+     - Request path
+     - Response status code
+     - Request duration in milliseconds
+
+Example log output:
+```
+[Response] 2024-03-14T10:30:45.123Z GET /health 200 5ms
+```
 
 ## Prerequisites
 

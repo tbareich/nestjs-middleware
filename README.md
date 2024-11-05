@@ -25,6 +25,16 @@ Example log output:
 [Response] 2024-03-14T10:30:45.123Z GET /health 200 5ms
 ```
 
+## Issues
+
+### Class Constructor Error
+When running `server.js`, you might encounter the following error:
+```
+[Nest] ERROR [ExceptionsHandler] Class constructor LoggerMiddleware cannot be invoked without 'new'
+```
+
+This error occurs due to middleware instantiation issues in the compiled JavaScript. Note that this error doesn't occur when running `server.compiled.js` due to different compilation handling by Bytenode.
+
 ## Prerequisites
 
 Before you begin, ensure you have Node.js and npm/yarn installed on your system.

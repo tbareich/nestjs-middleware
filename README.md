@@ -28,12 +28,12 @@ Example log output:
 ## Issues
 
 ### Class Constructor Error
-When running `server.js`, you might encounter the following error:
+When running `node prod/server.js`, you might encounter the following error:
 ```
 [Nest] ERROR [ExceptionsHandler] Class constructor LoggerMiddleware cannot be invoked without 'new'
 ```
 
-This error occurs due to middleware instantiation issues in the compiled JavaScript. Note that this error doesn't occur when running `server.compiled.js` due to different compilation handling by Bytenode.
+This error occurs due to middleware instantiation issues in the compiled JavaScript. Note that this error doesn't occur when running `node prod/server.compiled.js` due to different compilation handling by Bytenode.
 
 ## Prerequisites
 
